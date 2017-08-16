@@ -1,0 +1,14 @@
+{% extends "index.html" %} {% block result_container %}
+<div class="webResult">
+    <h2><a href="#">Question: {{query}}</a></h2>
+</div>
+<div id="answerTypeResult">
+    <p style="padding-top: 10px; padding-left:5px;"><a href="#" class="btn btn-red">Excepted Answer Type</a></p>
+    <div class="charts">
+        {% for r in results %}
+        <span style="color: black;">{{r[0]}}:{{r[1]}}</span>
+        <div class="charts__chart chart--p{{r[2]}} chart--sm chart--green"></div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

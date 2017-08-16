@@ -1,0 +1,10 @@
+<form id="searchForm" action="{{ url_for('answer_type') }}" method="post">
+    <fieldset>
+        <input id="s" type="text" name="query" />
+        <input type="submit" value="Submit" id="submitButton" />
+        <ul class="icons">
+            <li class="web" title="Web Search" data-searchType="web">Web</li>
+            <li class="news" title="News Search" data-searchType="news">News</li>
+        </ul>
+    </fieldset>
+</form>

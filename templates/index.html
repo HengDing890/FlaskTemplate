@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+{% include 'head.html' %}
+<body>
+    <div id="page">
+        <h1>Intelligence Question Answer Engine</h1>
+        {% include 'search_bar.html' %}
+        <div id="resultContainer">
+        {% block result_container %}
+        {% endblock %}
+        </div>
+    </div>
+    <p class="credit">Authorized by heng.ding@uis.no</p>
+</body>
+
+</html>
